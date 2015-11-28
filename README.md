@@ -4,16 +4,22 @@
 
 This library provides a PHP stream wrapper for GridFS files in MongoDB. This allows you to access files in GridFS with
 accessible URLs:
-```file_put_contents('gridfs://host/database-name/fs-prefix/path/to/file.txt', 'Hello world!');```
+```
+file_put_contents('gridfs://host/database-name/fs-prefix/path/to/file.txt', 'Hello world!');
+```
 
 The wrapper will accept directory separators in the path, but since there is no directory support in GridFS there won't
 be any real directories.
 
 To use the stream wrapper, include this library in your composer dependencies:
-```composer require alcaeus/mongodb-gridfs-wrapper:^1.0@dev```
+```
+composer require alcaeus/mongodb-gridfs-wrapper:^1.0@dev
+```
 
 Then, in your bootstrap process, register the stream wrapper:
-```Alcaeus\GridFs\StreamWrapper::register()```
+```
+Alcaeus\GridFs\StreamWrapper::register();
+```
 
 ## Caveats
 
