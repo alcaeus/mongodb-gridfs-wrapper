@@ -4,10 +4,7 @@
 
 This library provides a PHP stream wrapper for GridFS files in MongoDB. This allows you to access files in GridFS with
 accessible URLs:
-```file_put_contents('gridfs://localhost/database/fs/foo.txt', 'Hello world!');```
-
-This follows a simple structure:
-```gridfs://<host>/<database>/<bucket>/<path>```
+```file_put_contents('gridfs://host/database-name/fs-prefix/path/to/file.txt', 'Hello world!');```
 
 The wrapper will accept directory separators in the path, but since there is no directory support in GridFS there won't
 be any real directories.
