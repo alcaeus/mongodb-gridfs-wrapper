@@ -1,0 +1,29 @@
+{
+    "type": "library",
+    "name": "alcaeus/mongodb-gridfs-wrapper",
+    "description": "PHP stream wrapper for GridFS files in MongoDB",
+    "keywords": ["database", "mongodb", "gridfs"],
+    "authors": [
+        {
+            "name": "alcaeus",
+            "email": "alcaeus@alcaeus.org",
+            "homepage": "https://alcaeus.org"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^5.5",
+        "ext-mongo": "^1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    },
+    "autoload": {
+        "psr-0": { "Alcaeus\\GridFs": "lib/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
